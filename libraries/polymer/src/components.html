@@ -1,0 +1,15 @@
+<link rel="import" href="../node_modules/@polymer/polymer/polymer-element.html">
+
+<dom-module id="component-without-children">
+  <template>
+    <ce-without-children id="wc"></ce-without-children>
+  </template>
+  <script>
+    import 'ce-without-children';
+    
+    class ComponentWithoutChildren extends Polymer.Element {
+      static get is() { return 'component-without-children'; }
+    }
+    window.customElements.define(ComponentWithoutChildren.is, ComponentWithoutChildren);
+  </script>
+</dom-module>
